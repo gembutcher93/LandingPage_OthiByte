@@ -24,6 +24,7 @@
     <nav class="site-nav" aria-label="Navigazione principale">
       <a href="#app">App</a>
       <a href="#chi-sono">Chi sono</a>
+      <a href="#faq">FAQ</a>
       <a href="#contatti">Contatti</a>
     </nav>
   </div>
@@ -139,6 +140,10 @@
       <li><span class="benefits__icon">🖋️</span>Firma digitale del cliente</li>
     </ul>
 
+    <div class="app-cta reveal">
+      <a href="https://inkonsens-studio.pages.dev/" class="btn btn--outline" target="_blank" rel="noopener">Prova gratis InkConsent <span class="btn__arrow-ext" aria-hidden="true">↗</span></a>
+    </div>
+
     <div class="pricing reveal">
       <div class="pricing__card">
         <p class="pricing__name">Singolo tatuatore</p>
@@ -203,6 +208,10 @@
       <li><span class="benefits__icon">🌐</span>Multilingua</li>
     </ul>
 
+    <div class="app-cta reveal">
+      <a href="https://menu-flexy.pages.dev/" class="btn btn--outline" target="_blank" rel="noopener">Prova gratis FlexMenu <span class="btn__arrow-ext" aria-hidden="true">↗</span></a>
+    </div>
+
     <div class="pricing pricing--single reveal">
       <div class="pricing__card pricing__card--highlight">
         <p class="pricing__name">Licenza annuale</p>
@@ -261,6 +270,13 @@
       <li><span class="benefits__icon">🏆</span>Card giocatore evolutiva</li>
     </ul>
 
+    <div class="app-cta app-cta--column reveal">
+      <a href="https://airim-coach-premium.pages.dev/" class="btn btn--outline" target="_blank" rel="noopener">Prova come allenatore <span class="btn__arrow-ext" aria-hidden="true">↗</span></a>
+      <!-- Player demo pronta ma bloccata su richiesta di Gem: URL riservato per quando verrà sbloccata -> https://airim-player-premium.pages.dev/ -->
+      <button type="button" class="btn btn--outline btn--disabled" disabled aria-disabled="true" title="Si sblocca attivando la versione Coach Pro">Prova come giocatore <span class="btn__lock" aria-hidden="true">🔒</span></button>
+    </div>
+    <p class="app-cta__note reveal">La demo Player si sblocca attivando la versione Pro di Airim Coach — in arrivo a breve.</p>
+
     <div class="pricing pricing--single reveal">
       <div class="pricing__card pricing__card--highlight">
         <p class="pricing__name">Licenza annuale</p>
@@ -288,6 +304,133 @@
   </div>
 </section>
 
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <p class="eyebrow reveal">Domande frequenti</p>
+    <h2 class="faq__title reveal">Prima di iniziare</h2>
+
+    <div class="faq__list reveal">
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>Come funziona la versione di prova?</span>
+          <svg class="faq__chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq__a"><p>Apri il link della app che ti interessa e la usi da subito, senza installare nulla né inserire una carta di credito. InkConsent è gratuita fin da subito con un limite di 10 consensi (il resto dell'app resta libero, superata la soglia serve la versione Pro). FlexMenu offre 14 giorni di prova completa, Airim 20 giorni.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>Cosa succede se non compro entro la scadenza della prova?</span>
+          <svg class="faq__chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq__a"><p>Nessun addebito automatico: non ti chiediamo dati di pagamento in anticipo. Per FlexMenu e Airim il profilo resta comunque salvato fino a un mese di inattività; se in quel periodo non attivi una licenza e abbandoni l'app, i dati vengono rimossi dal server per liberare spazio. Se acquisti, invece, il profilo resta collegato stabilmente. Per InkConsent, superati i 10 consensi gratuiti, l'app resta installata e i dati restano archiviati: basta passare alla versione Pro per crearne di nuovi.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>I miei dati sono al sicuro?</span>
+          <svg class="faq__chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq__a"><p>Sì. InkConsent tiene tutto in locale sul tuo dispositivo, cifrato, senza passare da nessun server. FlexMenu usa Supabase solo per collegare il tuo profilo e generare la variante di menu associata al tuo QR: email e password servono esclusivamente a questo. Airim lavora quasi interamente offline: gli unici dati che passano da Supabase sono le credenziali per creare l'utente coach/giocatore e sincronizzare la squadra tra i dispositivi.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>Serve una connessione internet per usare l'app?</span>
+          <svg class="faq__chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq__a"><p>InkConsent funziona sempre offline. FlexMenu: se il menu è già stato caricato una volta, resta visibile anche offline tramite il link salvato — senza connessione perdi solo gli aggiornamenti in tempo reale. Airim gira quasi interamente offline: serve connessione solo per il login iniziale e per sincronizzare i dati tra dispositivi tramite un codice di accoppiamento (da copiare e incollare).</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>Come faccio a disdire o smettere di usarla?</span>
+          <svg class="faq__chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq__a"><p>Le licenze durano un anno: alla scadenza l'accesso viene limitato automaticamente, per tutte e tre le app. Per rinnovare basta effettuare il pagamento: ti aggiorno io manualmente l'anno di utilizzo. Per ora non c'è un rinnovo automatico (lo sto valutando per il futuro), quindi se non rinnovi non c'è nessun addebito né procedura di disdetta da fare.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>L'app funziona su iPhone e Android?</span>
+          <svg class="faq__chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq__a"><p>Sì, tutte e tre le app funzionano sia su iPhone che su Android, oltre che su computer: bastano un browser aggiornato (Safari o Chrome) e una connessione per il primo avvio.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>Devo scaricarla da un app store?</span>
+          <svg class="faq__chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq__a"><p>No, nessun App Store o Play Store: apri il link, e se vuoi puoi aggiungere l'app alla schermata Home in pochi secondi, come una app normale. Trovi la guida passo passo qui sotto.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTALLA COME APP ============ -->
+<section class="install-guide" id="installa">
+  <div class="wrap">
+    <p class="eyebrow reveal">Guida rapida</p>
+    <h2 class="install-guide__title reveal">Installala come un'app, in pochi secondi</h2>
+    <p class="install-guide__subtitle reveal">Niente store: aggiungi InkConsent, FlexMenu o Airim alla schermata Home e usale come un'app installata, con la sua icona.</p>
+
+    <div class="install-cols reveal">
+      <div class="install-col">
+        <h3 class="install-col__title">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15.5V4"/><path d="M7.5 8.5L12 4l4.5 4.5"/><path d="M5 12v6.5A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5V12"/></svg>
+          iOS (Safari)
+        </h3>
+        <ol class="install-steps">
+          <li>
+            <span class="install-steps__icon" aria-hidden="true">1</span>
+            <p>Apri il link dell'app in Safari</p>
+          </li>
+          <li>
+            <span class="install-steps__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15.5V4"/><path d="M7.5 8.5L12 4l4.5 4.5"/><path d="M5 12v6.5A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5V12"/></svg></span>
+            <p>Tocca l'icona di condivisione in basso</p>
+          </li>
+          <li>
+            <span class="install-steps__icon" aria-hidden="true">3</span>
+            <p>Scorri e tocca <strong>"Aggiungi a Home"</strong></p>
+          </li>
+          <li>
+            <span class="install-steps__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M12 8v8M8 12h8"/></svg></span>
+            <p>Conferma il nome e tocca <strong>"Aggiungi"</strong></p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="install-col">
+        <h3 class="install-col__title">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="19" r="1.4" fill="currentColor" stroke="none"/></svg>
+          Android (Chrome)
+        </h3>
+        <ol class="install-steps">
+          <li>
+            <span class="install-steps__icon" aria-hidden="true">1</span>
+            <p>Apri il link dell'app in Chrome</p>
+          </li>
+          <li>
+            <span class="install-steps__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="19" r="1.4" fill="currentColor" stroke="none"/></svg></span>
+            <p>Tocca i tre puntini in alto a destra</p>
+          </li>
+          <li>
+            <span class="install-steps__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M12 8v8M8 12h8"/></svg></span>
+            <p>Tocca <strong>"Installa app"</strong> (o "Aggiungi a schermata Home")</p>
+          </li>
+          <li>
+            <span class="install-steps__icon" aria-hidden="true">4</span>
+            <p>Conferma</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <!-- ============ FOOTER ============ -->
@@ -296,9 +439,34 @@
     <img src="img/logo-othibyte-sm.webp" width="56" height="56" alt="OthiByte" class="site-footer__logo">
     <p class="site-footer__tagline">App su misura, fatte con cura, da uno studio indie sardo.</p>
 
-    <div class="site-footer__links">
-      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
-      <a href="mailto:info@othibyte.dev">info@othibyte.dev</a>
+    <div class="site-footer__social">
+      <a href="https://www.instagram.com/othibyte" class="social-btn" target="_blank" rel="noopener" aria-label="Instagram OthiByte">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5.5"/>
+          <circle cx="12" cy="12" r="4.2"/>
+          <circle cx="17.3" cy="6.7" r="1.05" fill="currentColor" stroke="none"/>
+        </svg>
+        <span>Instagram</span>
+      </a>
+      <a href="https://www.gembutcher.com" class="social-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M3 12h18"/>
+          <path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9Z"/>
+        </svg>
+        <span>Gembutcher Tattoo</span>
+      </a>
+    </div>
+
+    <div class="site-footer__contacts">
+      <a href="mailto:othibyte@gmail.com" class="contact-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+        <span>othibyte@gmail.com</span>
+      </a>
+      <a href="tel:+393498290606" class="contact-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 10.8c1.3 2.7 3.6 5 6.3 6.3l1.9-1.9c.3-.3.8-.4 1.2-.2 1 .4 2.2.6 3.4.6.6 0 1.1.5 1.1 1.1v3c0 .6-.5 1.1-1.1 1.1C10.1 20.8 3.2 13.9 3.2 5.6c0-.6.5-1.1 1.1-1.1h3c.6 0 1.1.5 1.1 1.1 0 1.2.2 2.4.6 3.4.2.4.1.9-.2 1.2l-1.9 1.9Z"/></svg>
+        <span>+39 349 829 0606</span>
+      </a>
     </div>
 
     <p class="site-footer__copy">© <span id="year"></span> OthiByte. Tutti i diritti riservati.</p>
