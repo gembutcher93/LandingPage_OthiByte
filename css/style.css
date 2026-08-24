@@ -497,6 +497,10 @@ section { position: relative; }
   .pricing { grid-template-columns: repeat(3, 1fr); }
 }
 .pricing--single { max-width: 340px; }
+.pricing--two { max-width: 560px; }
+@media (min-width: 720px) {
+  .pricing--two { grid-template-columns: repeat(2, 1fr); }
+}
 
 .pricing__card {
   border: 1px solid var(--line);
