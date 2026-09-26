@@ -111,7 +111,19 @@ a { color: inherit; text-decoration: none; }
 .brand__mark { border-radius: 50%; }
 
 .site-nav { display: flex; gap: clamp(14px, 3vw, 28px); font-size: .92rem; }
-.site-nav a { color: var(--oy-text-dim); transition: color .2s ease; }
+.site-nav a { color: var(--oy-text-dim); transition: color .2s ease; white-space: nowrap; }
+.brand { flex: none; }
+@media (max-width: 400px) {
+  .site-header__row { gap: 12px; }
+  .brand { gap: 8px; }
+  .site-nav { gap: 10px; }
+}
+@media (max-width: 360px) {
+  .site-nav { font-size: .86rem; }
+}
+@media (max-width: 340px) {
+  .site-nav a { white-space: normal; }
+}
 .site-nav a:hover, .site-nav a:focus-visible { color: var(--oy-text); }
 
 /* ---------- Section scaffolding ---------- */
